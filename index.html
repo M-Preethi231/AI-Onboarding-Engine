@@ -340,7 +340,7 @@ async function callGroq(system, user){
     method:'POST',
     headers:{'Authorization':'Bearer '+APIKEY,'Content-Type':'application/json'},
     body:JSON.stringify({
-      model:'llama3-70b-8192',
+      model:'llama-3.3-70b-versatile',
       messages:[{role:'system',content:system},{role:'user',content:user}],
       temperature:0.1,
       max_tokens:3000
@@ -484,6 +484,35 @@ function anim(id,f,t,dur){
   function step(n){const p=Math.min((n-s)/dur,1);el.textContent=Math.round(f+(t-f)*p);if(p<1)requestAnimationFrame(step)}
   requestAnimationFrame(step);
 }
+</script>
+</body>
+</html>
+
+
+
+
+
+  
+   
+ 
+  
+
+
+   
+  
+  
+
+
+   
+ 
+
+  
+
+   
+   
+        
+
+
 </script>
 </body>
 </html>
